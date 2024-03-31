@@ -8,7 +8,7 @@ from task01.trace_route import TraceRoute
 
 
 def main():
-    trace_router = TraceRoute('5.189.17.8')
+    trace_router = TraceRoute('your addres')
     trace_router_output = trace_router.execute()
     for ip in IpExtractor(trace_router_output).extract():
         print(IpGeolocation.get_info(ip))
